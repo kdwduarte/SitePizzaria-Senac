@@ -1,0 +1,56 @@
+ .carousel-fade .carousel-item {
+    opacity: 0;
+    transition: 300ms;
+    transition-property: opacity;
+    transform: none;
+  }
+
+  .carousel-caption {
+    right: 5vw;
+    left: 52vw;
+    top: 15vw;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .carousel-caption .title {
+    font-size: 6rem;
+    font-weight: bold;
+    text-shadow: 0.35rem 0.35rem 0.5rem rgba(0, 0, 0, 0.162)
+  }
+
+  #Calabresa {
+    color: rgb(244, 52, 52);
+  }
+
+  #Marguerita {
+    color: green;
+  }
+
+  #descricao {
+    font-size: 1.5rem;
+  }
+
+  .navbar-blur {
+    background-color: rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(0.09rem);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 0%;
+    height: 4.6rem;
+  }
+
+  /* Responsividade */
+  @media (max-width:1440px) {
+    .title {
+        font-size: 3rem !important; 
+    }
+
+    .display-1 {
+        font-size: 2rem !important;
+    }
+
+    .descricao {
+        font-size: 0.5rem !important;
+    }
+
+  }
