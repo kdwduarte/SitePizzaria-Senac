@@ -4,16 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- CSS do Bootstrap -->
+    <!-- CSS do Bootstrap via CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css"
         integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS personalizado (sobrescreve o Bootstrap quando necessário) -->
     <link rel="stylesheet" href="/css/style.css">
     <title>Penna's Pizza</title>
 </head>
 
 <body>
+    <!-- JS do Bootstrap via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.min.js"
+        integrity="sha512-zKeerWHHuP3ar7kX2WKBSENzb+GJytFSBL6HrR2nPSR1kOX1qjm+oHooQtbDpDBSITgyl7QXZApvDfDWvKjkUw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Barra de Navegação -->
     <nav class="navbar navbar-expand-lg py-0 fixed-top navbar-blur">
         <div class="container-fluid">
@@ -31,7 +35,7 @@
                         <a class="nav-link active " aria-current="page " href="#">INÍCIO</a>
                     </li>
                     <li class="nav-item px-5 ">
-                        <a class="nav-link " href="#sobrenos">SOBRE NÓS</a>
+                        <a class="nav-link " href="#sobre">SOBRE NÓS</a>
                     </li>
                     <li class="nav-item px-5 ">
                         <a class="nav-link " href="#cardapio">CARDÁPIO</a>
@@ -41,7 +45,7 @@
                     </li>
                     <li class="nav-item dropdown px-5 ">
                         <a class="nav-link dropdown-toggle " href="# " role="button " data-bs-toggle="dropdown "
-                            aria-expanded="false ">LINKS</a>
+                            aria-expanded="false ">OUTROS</a>
                         <ul class="dropdown-menu ">
                             <li><a class="dropdown-item " href="historia.html">História</a></li>
                             <li><a class="dropdown-item " href="equipe.html">Equipe</a></li>
@@ -51,10 +55,6 @@
             </div>
         </div>
     </nav>
-    <!-- JS do Bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.min.js "
-        integrity="sha512-zKeerWHHuP3ar7kX2WKBSENzb+GJytFSBL6HrR2nPSR1kOX1qjm+oHooQtbDpDBSITgyl7QXZApvDfDWvKjkUw=="
-        crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
     <!-- Carrossel -->
     <section id="Carrossel">
         <div id="carouselExampleCaptions" class="carousel slide carousel-fade carousel-dark">
@@ -70,7 +70,9 @@
                     <div class="carousel-caption d-none d-sm-block">
                         <h2 class="display-1">Mais pedidas:</h2>
                         <h1 id="Calabresa" class="title">CALABRESA</h1>
-                        <p id="descricao" class="display-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue risus, condimentum et turpis ut, varius faucibus est. Morbi semper urna bibendum tellus porta tempus.</p>
+                        <p id="descricao" class="display-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Donec augue risus, condimentum et turpis ut, varius faucibus est. Morbi semper urna bibendum
+                            tellus porta tempus.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -78,7 +80,9 @@
                     <div class="carousel-caption d-none d-sm-block">
                         <h2 class="display-1">Mais pedidas:</h2>
                         <h1 id="Marguerita" class="title">MARGUERITA</h1>
-                        <p id="descricao" class="display-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue risus, condimentum et turpis ut, varius faucibus est. Morbi semper urna bibendum tellus porta tempus.</p>
+                        <p id="descricao" class="display-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Donec augue risus, condimentum et turpis ut, varius faucibus est. Morbi semper urna bibendum
+                            tellus porta tempus.</p>
                     </div>
                 </div>
             </div>
