@@ -14,12 +14,11 @@
   top: 15vw;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  text-align: center;
+  text-align: right;
 }
 
 .carousel-caption .title {
   font-size: clamp(2rem, 6vw, 5rem);
-  font-weight: bold;
   text-shadow: 0.35vw 0.35vw 0.5vw rgba(0, 0, 0, 0.16);
 }
 
@@ -27,17 +26,21 @@
   font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
+#sobre .container #Bandeira {
+  width: 5rem;
+  border-top: solid 3px ;
+  color: rgb(244, 52, 52);
+}
+
+#sobre .container #assinatura {
+  width: 5rem;
+}
+
 /* Cores */
 #Calabresa {color: rgb(244, 52, 52);}
 #Marguerita {color: green;}
-
-.navbar-blur {
-  background-color: rgba(0, 0, 0, 0.10);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  padding: 0 2vw;
-  height: clamp(5rem, 5vw, 3.5em);
-}
+#Saudacao {color: rgb(244, 52, 52);}
+#Apresentacao {color: rgb(0, 0, 0);}
 
 /* Breakpoints de Responsividade */
 @media (max-width: 992px) {
