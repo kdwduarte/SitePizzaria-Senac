@@ -14,10 +14,6 @@
 </head>
 
 <body>
-    <!-- JS do Bootstrap via CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.min.js"
-        integrity="sha512-zKeerWHHuP3ar7kX2WKBSENzb+GJytFSBL6HrR2nPSR1kOX1qjm+oHooQtbDpDBSITgyl7QXZApvDfDWvKjkUw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Barra de Navegação -->
     <nav class="navbar navbar-expand-lg py-0 fixed-top">
         <div class="container-fluid">
@@ -60,22 +56,12 @@
         <div id="carouselExampleCaptions" class="carousel slide carousel-fade carousel-dark">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                    class="active bg-danger" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="bg-success"
+                    class="active bg-success" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="bg-danger"
                     aria-label="Slide 2"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/banner/banner_calabresa_ajustado.png" class="d-block w-100" alt="Pizza de Calabresa">
-                    <div class="carousel-caption d-none d-sm-block">
-                        <h2 class="display-3">Mais pedidas:</h2>
-                        <h1 id="Calabresa" class="title">CALABRESA</h1>
-                        <p id="descricao" class="display-6">A clássica que nunca sai de moda. Fatias generosas de
-                            calabresa levemente dourada, cebola fresquinha e um toque especial de temperos que realçam
-                            todo o sabor.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
                     <img src="img/banner/banner_marguerita_ajustado.png" class="d-block w-100 " alt="Pizza Marguerita">
                     <div class="carousel-caption d-none d-sm-block">
                         <h2 class="display-3">Mais pedidas:</h2>
@@ -83,12 +69,26 @@
                         <p id="descricao" class="display-6">Simplicidade e frescor em cada pedaço. Molho de tomate
                             artesanal, queijo derretido e folhas de manjericão fresco que trazem um aroma irresistível.
                         </p>
+                        <a id="botaocarrossel" href="#cardapio" class="fw-light btn rounded-pill px-5 py-2 shadow">Peça
+                            já!</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner/banner_calabresa_ajustado.png" class="d-block w-100" alt="Pizza de Calabresa">
+                    <div class="carousel-caption d-none d-sm-block">
+                        <h2 class="display-3">Mais pedidas:</h2>
+                        <h1 id="Calabresa" class="title">CALABRESA</h1>
+                        <p id="descricao" class="display-6">A clássica que nunca sai de moda. Fatias generosas de
+                            calabresa levemente dourada, cebola fresquinha e um toque especial de temperos que realçam
+                            todo o sabor.</p>
+                        <a id="botaocarrossel" href="#cardapio" class="fw-light btn rounded-pill px-5 py-2 shadow">Peça
+                            já!</a>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
     </section>
+    <!-- Sobre nós -->
     <section id="sobre" class="mt-5 py-5 ">
         <div class="container card shadow text-center py-5 md-3 px-md-5 align-items-center">
             <h3 id="Saudacao" class="text-center py-0 fw-light">Quem somos?</h3>
@@ -110,49 +110,203 @@
             <img id="assinatura" src="/img/logotipos/assinatura.png" alt="Assinatura">
         </div>
     </section>
-    <section id="cardapio" class="mt-5 container-fluid text-center">
+    <!-- Cardápio -->
+    <section id="cardapio" class="container-fluid mt-5 text-center">
         <div class="row">
-            <div class="col-lg-3 col-sm-6 col-10 mx-auto">
-                <div class="my-5 p-4">
-                    <img class="img-fluid px-4" src="/img/cardapio/pizza_italiana.png" alt="Pizza Italiana">
-                    <div class="text-center mt-5">
-                        <h5>Pizza Italiana</h5>
-                        <p>molho de tomate, muçarela de búfala, tomate cereja, azeitonas pretas, cogumelos, azeitonas
+            <div class="carta col-md-3 col-sm-6 col-10 mx-auto">
+                <div class="my-3 p-2 px-3">
+
+                    <img class="img-fluid px-5 py-4 " src="img/cardapio/pizza_italiana.png">
+                    <div class="text-center mt-3">
+                        <h5 class="">Pizza Italiana</h5>
+                        <p class="text-normal">Molho de tomate, muçarela de búfala, tomate cereja, azeitonas pretas,
+                            cogumelos, azeitonas
                             verdes e manjericão fresco.</p>
+                        <div class="row">
+                            <div class="col">
+                                <hr>
+                            </div>
+                            <div class="col-auto pt-1 px-0 fw-medium">
+                                <p>Tamanhos</p>
+                            </div>
+                            <div class="col">
+                                <hr>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <ul class="list-group text-start mx-3 mb-3">
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="p" id="Pizza1P">
+                        <label class="form-check-label" for="Pizza1P">Pequena: 25cm / R$ 35,00</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="m" id="Pizza1M">
+                        <label class="form-check-label" for="Pizza1M">Média: 30cm / R$ 45,00</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="g" id="Pizza1G">
+                        <label class="form-check-label" for="Pizza1G">Grande: 40cm / R$ 60,00</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="f" id="Pizza1F">
+                        <label class="form-check-label" for="Pizza1F">Festa: 50cm / R$ 70,00</label>
+                    </li>
+                    <button class="btn btn-outline-success rounded-pill mt-3" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">Adicionar ao carrinho</button>
+                </ul>
             </div>
-            <div class="col-lg-3 col-sm-6 col-10 mx-auto">
-                <div class="my-5 p-4">
-                    <img class="img-fluid px-4" src="/img/cardapio/pizza_pepperoni.png" alt="Pizza Calabresa Gourmet">
-                    <div class="text-center mt-5">
-                        <h5>Pizza Calabresa Gourmet</h5>
-                        <p>molho de tomate, muçarela, calabresa em rodelas, tomate cereja, azeitonas verdes, cogumelos e
+            <div class="carta col-md-3 col-sm-6 col-10 mx-auto">
+                <div class="my-3 p-2 px-3">
+                    <img class="img-fluid px-5 py-4 " src="img/cardapio/pizza_pepperoni.png">
+                    <div class="text-center mt-3">
+                        <h5 class="">Pizza Calabresa Gourmet</h5>
+                        <p class="text-normal">Molho de tomate, muçarela, calabresa em rodelas, tomate cereja, azeitonas
+                            verdes, cogumelos e
                             manjericão.</p>
+                        <div class="row">
+                            <div class="col">
+                                <hr>
+                            </div>
+                            <div class="col-auto pt-1 px-0 fw-medium">
+                                <p>Tamanhos</p>
+                            </div>
+                            <div class="col">
+                                <hr>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <ul class="list-group text-start mx-3 mb-3">
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="p" id="Pizza2P">
+                        <label class="form-check-label" for="Pizza2P">Pequena: 25cm / R$ 35,00</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="m" id="Pizza2M">
+                        <label class="form-check-label" for="Pizza2M">Média: 30cm / R$ 45,00</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="g" id="Pizza2G">
+                        <label class="form-check-label" for="Pizza2G">Grande: 40cm / R$ 60,00</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="f" id="Pizza2F">
+                        <label class="form-check-label" for="Pizza2F">Festa: 50cm / R$ 70,00</label>
+                    </li>
+                    <button class="btn btn-outline-success rounded-pill mt-3" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">Adicionar ao carrinho</button>
+                </ul>
             </div>
-            <div class="col-lg-3 col-sm-6 col-10 mx-auto">
-                <div class="my-5 p-4">
-                    <img class="img-fluid px-4" src="/img/cardapio/pizza_marguerita.png" alt="Pizza Marguerita">
-                    <div class="text-center mt-5">
-                        <h5>Pizza Marguerita Especial</h5>
-                        <p>molho de tomate, muçarela, presunto cru, tomate cereja, azeitonas verdes e pretas, cogumelos e manjericão.</p>
+            <div class="carta col-md-3 col-sm-6 col-10 mx-auto">
+                <div class="my-3 p-2 px-3">
+                    <img class="img-fluid px-5 py-4 " src="img/cardapio/pizza_marguerita.png">
+                    <div class="text-center mt-3">
+                        <h5 class="">Pizza Marguerita Especial</h5>
+                        <p class="text-normal">Molho de tomate, muçarela, presunto cru, tomate cereja, azeitonas verdes
+                            e pretas, cogumelos
+                            e manjericão.</p>
+                        <div class="row">
+                            <div class="col">
+                                <hr>
+                            </div>
+                            <div class="col-auto pt-1 px-0 fw-medium">
+                                <p>Tamanhos</p>
+                            </div>
+                            <div class="col">
+                                <hr>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <ul class="list-group text-start mx-3 mb-3">
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="p" id="Pizza3P">
+                        <label class="form-check-label" for="Pizza3P">Pequena: 25cm / R$ 35,00</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="m" id="Pizza3M">
+                        <label class="form-check-label" for="Pizza3M">Média: 30cm / R$ 45,00</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="g" id="Pizza3G">
+                        <label class="form-check-label" for="Pizza3G">Grande: 40cm / R$ 60,00</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="f" id="Pizza3F">
+                        <label class="form-check-label" for="Pizza3F">Festa: 50cm / R$ 70,00</label>
+                    </li>
+                    <button class="btn btn-outline-success rounded-pill mt-3" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">Adicionar ao carrinho</button>
+                </ul>
             </div>
-            <div class="col-lg-3 col-sm-6 col-10 mx-auto">
-                <div class="my-5 p-4">
-                    <img id="img-fluid px-4" src="/img/cardapio/pizza_vegetariana.png" alt="">
-                    <div class="text-center mt-5">
-                        <h5>Pizza Vegetariana</h5>
-                        <p>molho de tomate, muçarela, tomate cereja, azeitonas pretas e rúcula.</p>
+            <div class="carta col-md-3 col-sm-6 col-10 mx-auto">
+                <div class="my-3 p-2 px-3">
+                    <img class="img-fluid px-5 py-4 " src="img/cardapio/pizza_vegetariana.png">
+                    <div class="text-center mt-3">
+                        <h5 class="">Pizza Vegetariana</h5>
+                        <p class="text-normal">Molho de tomate, muçarela, tomate cereja, azeitonas verdes e pretas,
+                            pimentão colorido, champignon e rúcula fresca.</p>
+                        <div class="row">
+                            <div class="col">
+                                <hr>
+                            </div>
+                            <div class="col-auto pt-1 px-0 fw-medium">
+                                <p>Tamanhos</p>
+                            </div>
+                            <div class="col">
+                                <hr>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <ul class="list-group text-start mx-3 mb-3">
+                    <li class="list-group-item d-flex">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="p" id="Pizza4P">
+                        <label class="form-check-label" for="Pizza4P">Pequena: 25cm / R$ 35,00</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="m" id="Pizza4M">
+                        <label class="form-check-label" for="Pizza4M">Média: 30cm / R$ 45,00</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="g" id="Pizza4G">
+                        <label class="form-check-label" for="Pizza4G">Grande: 40cm / R$ 60,00</label>
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="f" id="Pizza4F">
+                        <label class="form-check-label" for="Pizza4F">Festa: 50cm / R$ 70,00</label>
+                    </li>
+                    <button class="btn btn-outline-success rounded-pill mt-3" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">Adicionar ao carrinho</button>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h1 id="ingredientes" class="text-center display-3 pt-5 text-success">Nossos ingredientes</h1>
+            <div class="row">
+                <div class="col-12"><img src="/img/index/toldo.png" alt="" class="img-fluid"></div>
+                <div class="col-md-6 col-12"><img src="/img/index/vegetais.png" alt="" class="img-fluid"></div>
+                <div class="col-md-6 col-12 px-5 text-center">
+                    <p class="text-center fw-bold text-success-emphasis">"O segredo está na escolha"</p>
+                    Na Penna’s Pizza, acreditamos que a qualidade de cada fatia começa
+                    pela seleção cuidadosa de nossos ingredientes. Utilizamos tomates frescos e maduros para criar um
+                    molho encorpado e cheio de sabor, preparado artesanalmente todos os dias. Nossa muçarela é de origem
+                    selecionada, garantindo cremosidade e sabor inconfundível.
+
+                    As ervas e temperos são frescos, realçando o aroma e o paladar de cada receita. As carnes e
+                    embutidos passam por uma criteriosa escolha, priorizando fornecedores confiáveis e cortes de
+                    primeira. Já nossos vegetais – como manjericão, rúcula, cogumelos e pimentões – são colhidos no
+                    ponto certo, preservando nutrientes e frescor.
+
+                    Cada ingrediente é pensado para proporcionar uma experiência única: leve, saborosa e memorável,
+                    transformando sua refeição em um momento especial.
                 </div>
             </div>
         </div>
     </section>
-
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
@@ -177,7 +331,30 @@
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
-
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS do Bootstrap via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.min.js"
+        integrity="sha512-zKeerWHHuP3ar7kX2WKBSENzb+GJytFSBL6HrR2nPSR1kOX1qjm+oHooQtbDpDBSITgyl7QXZApvDfDWvKjkUw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 

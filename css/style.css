@@ -1,3 +1,5 @@
+/* Carrossel */
+
 .carousel-fade .carousel-item {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
@@ -19,7 +21,7 @@
 
 .carousel-caption .title {
   font-size: clamp(2rem, 6vw, 5rem);
-  text-shadow: 0.35vw 0.35vw 0.5vw rgba(0, 0, 0, 0.16);
+  text-shadow: 0.35vw 0.35vw 0.35vw rgba(0, 0, 0, 0.16);
 }
 
 #descricao {
@@ -36,7 +38,26 @@
   width: 5rem;
 }
 
+/* Cardápio */
+.carta {
+  z-index: 100;
+  transition: 0.3s ease;
+}
+
+.carta:hover {
+  box-shadow: var(--bs-box-shadow);
+  z-index: 101;
+  transform: scale(1.05);
+}
+
+.text-normal {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
 /* Cores */
+#botaocarrossel {background-color: green; color: white; transition: 0.3s;}
+#botaocarrossel:hover {background-color: rgb(0, 151, 0); color: white; transform: scale(1.05);}
 #Calabresa {color: rgb(244, 52, 52);}
 #Marguerita {color: green;}
 #Saudacao {color: rgb(244, 52, 52);}
