@@ -50,11 +50,6 @@
   transform: scale(1.05);
 }
 
-.text-normal {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-}
-
 /* Cores */
 #botaocarrossel {background-color: green; color: white; transition: 0.3s;}
 #botaocarrossel:hover {background-color: rgb(0, 151, 0); color: white; transform: scale(1.05);}
