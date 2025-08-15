@@ -1,3 +1,8 @@
+/* NavBar */
+.navbar.scrolled {backdrop-filter: blur(0.3rem);
+transition: 150ms;
+}
+
 /* Carrossel */
 
 .carousel-fade .carousel-item {
@@ -28,6 +33,7 @@
   font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
+/* Sobre */
 #sobre .container #Bandeira {
   width: 5rem;
   border-top: solid 3px ;
@@ -47,7 +53,33 @@
 .carta:hover {
   box-shadow: var(--bs-box-shadow);
   z-index: 101;
+  transform: scale(1.02);
+}
+
+.slider {
+  z-index: 100;
+  transition: 0.3s ease;
+}
+
+.slider:hover {
+  box-shadow: var(--bs-box-shadow);
+  z-index: 101;
   transform: scale(1.05);
+}
+
+/* Blog */
+#blog .container .flag {
+  width: 4.5rem;
+  border-top: solid rgb(222, 52, 52)  0.35rem;
+}
+
+.blog {
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+.blog:hover {
+  box-shadow: var(--bs-box-shadow);
 }
 
 /* Cores */
